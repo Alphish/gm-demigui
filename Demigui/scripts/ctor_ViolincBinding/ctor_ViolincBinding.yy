@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ctor_ViolincBinding",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ctor_ViolincBinding",
+  "parent":{
+    "name":"Bindings",
+    "path":"folders/_Packages/Alphish/Violinc/Bindings.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
