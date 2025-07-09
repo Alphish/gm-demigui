@@ -1,19 +1,23 @@
-hover_instance = noone;
-gui_hoverables = [];
-room_hoverables = [];
+// Inherit the parent event
+event_inherited();
 
 collision_list = ds_list_create();
+mouse_x_getter = is_gui ? device_mouse_x_to_gui : device_mouse_x;
+mouse_y_getter = is_gui ? device_mouse_y_to_gui : device_mouse_y;
 
-add_hoverable = function(_component) {
-    var _hoverables = _component.is_gui_bound ? gui_hoverables : room_hoverables;
-    array_push(_hoverables, _component);
-}
-
-remove_hoverable = function(_component) {
-    var _hoverables = _component.is_gui_bound ? gui_hoverables : room_hoverables;
-    var _idx = array_get_index(_hoverables, _component);
-    if (_idx < 0)
-        return;
+get_hover_instance = function() {
+    var _count = instance_position_list(mouse_x_getter(0), mouse_y_getter(0), hoverables, collision_list, false);
+    var _result = noone;
+    for (var i = 0; i < _count; i++) {
+        var _instance = collision_list[| i];
+        if (!_instance.visible)
+            continue;
     
-    _hoverables[_idx] = array_pop(_hoverables);
+        if (!instance_exists(_result) || _result.depth > _instance.depth) {
+            _result = _instance;
+        }
+    }
+    ds_list_clear(collision_list);
+    hover_instance = _result;
+    return _result;
 }

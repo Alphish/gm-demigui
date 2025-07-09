@@ -1,2 +1,3 @@
-if (is_hoverable)
-    ctrl_DemiguiMouse.remove_hoverable(id);
+with (pointer) {
+    remove_hoverable(other.id);
+}
