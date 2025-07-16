@@ -6,3 +6,15 @@ view_xport[0] = 0;
 view_yport[0] = 0;
 view_wport[0] = room_width;
 view_hport[0] = room_height;
+
+test_a = function() {
+    show_debug_message("AAA");
+}
+
+test_b = function() {
+    show_debug_message("BBB");
+}
+
+test_c = function() {
+    show_debug_message("CCC");
+}

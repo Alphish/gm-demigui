@@ -1,4 +1,5 @@
 sys_Demigui.check_hover("gui", "room");
+sys_Demigui.try_interact();
 
 var _xshift = keyboard_check(vk_right) - keyboard_check(vk_left);
 var _yshift = keyboard_check(vk_down) - keyboard_check(vk_up);

@@ -35,6 +35,7 @@
     {"id":{"name":"par_DemiguiPointer","path":"objects/par_DemiguiPointer/par_DemiguiPointer.yy",},},
     {"id":{"name":"sys_Demigui","path":"objects/sys_Demigui/sys_Demigui.yy",},},
     {"id":{"name":"ui_DemiguiButton","path":"objects/ui_DemiguiButton/ui_DemiguiButton.yy",},},
+    {"id":{"name":"ui_TestButton","path":"objects/ui_TestButton/ui_TestButton.yy",},},
     {"id":{"name":"ui_TestComponent","path":"objects/ui_TestComponent/ui_TestComponent.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"ctor_DemiguiBlankCommand","path":"scripts/ctor_DemiguiBlankCommand/ctor_DemiguiBlankCommand.yy",},},
