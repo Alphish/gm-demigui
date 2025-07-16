@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ctor_DemiguiException",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ctor_DemiguiException",
+  "parent":{
+    "name":"Demigui",
+    "path":"folders/_Packages/Alphish/Demigui.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

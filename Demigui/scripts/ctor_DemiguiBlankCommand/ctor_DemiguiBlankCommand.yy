@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ctor_DemiguiBlankCommand",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ctor_DemiguiBlankCommand",
+  "parent":{
+    "name":"Bindings",
+    "path":"folders/_Packages/Alphish/Demigui/Bindings.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
