@@ -16,5 +16,9 @@ remove_hoverable = function(_component) {
 }
 
 get_hover_instance = function() {
-    throw DemiguiException.not_implemented(id, nameof(check));
+    throw DemiguiException.not_implemented(id, nameof(get_hover_instance));
+}
+
+try_interact = function() {
+    throw DemiguiException.not_implemented(id, nameof(try_interact));
 }

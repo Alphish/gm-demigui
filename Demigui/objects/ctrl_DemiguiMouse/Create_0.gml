@@ -12,12 +12,22 @@ get_hover_instance = function() {
         var _instance = collision_list[| i];
         if (!_instance.visible)
             continue;
-    
+        
+        if (!is_undefined(_instance[$ "can_hover"]) && !_instance.can_hover())
+            continue;
+        
         if (!instance_exists(_result) || _result.depth > _instance.depth) {
             _result = _instance;
         }
     }
     ds_list_clear(collision_list);
-    hover_instance = _result;
     return _result;
+}
+
+try_interact = function() {
+    if (mouse_check_button_pressed(mb_left)) {
+        var _hover_instance = sys_Demigui.hover_instance;
+        if (!is_undefined(_hover_instance[$ "on_click"]))
+            sys_Demigui.hover_instance.on_click();
+    }
 }

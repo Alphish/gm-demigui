@@ -11,8 +11,8 @@
   "name":"par_DemiguiComponent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Demigui",
-    "path":"folders/_Packages/Alphish/Demigui.yy",
+    "name":"Components",
+    "path":"folders/_Packages/Alphish/Demigui/Components.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,8 +29,8 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"is_gui_bound","filters":[],"listItems":[],"multiselect":false,"name":"is_gui_bound","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"hover_group","filters":[],"listItems":[],"multiselect":false,"name":"hover_group","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"is_gui_bound","filters":[],"listItems":[],"multiselect":false,"name":"is_gui_bound","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -1,16 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"ui_TestComponent",
+  "%Name":"ui_DemiguiButton",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"ui_TestComponent",
+  "name":"ui_DemiguiButton",
   "overriddenProperties":[],
   "parent":{
-    "name":"Demo",
-    "path":"folders/Demo.yy",
+    "name":"Components",
+    "path":"folders/_Packages/Alphish/Demigui/Components.yy",
   },
   "parentObjectId":{
     "name":"par_DemiguiComponent",
@@ -29,14 +28,13 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v1","%Name":"command","filters":[],"listItems":[],"multiselect":false,"name":"command","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"undefined","varType":4,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_TestComponent",
-    "path":"sprites/spr_TestComponent/spr_TestComponent.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
