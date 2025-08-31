@@ -1,3 +1,1 @@
-with (pointer) {
-    remove_hoverable(other.id);
-}
+component_data.remove();

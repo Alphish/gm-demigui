@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ctor_DemiguiJoint",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ctor_DemiguiJoint",
+  "parent":{
+    "name":"Joints",
+    "path":"folders/_Packages/Alphish/Demigui/Components/Joints.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
