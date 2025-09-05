@@ -53,10 +53,19 @@ function DemiguiJoint(_parent) constructor {
     }
     
     static detach_child = function() {
+        if (is_undefined(parent))
+            return;
+        
         parent.remove_child(child);
         child = undefined;
         if (!is_reusable)
             parent.detach_joint(self);
+    }
+    
+    static detach_parent = function() {
+        parent = undefined;
+        if (!is_undefined(child))
+            child.remove();
     }
     
     // ---------

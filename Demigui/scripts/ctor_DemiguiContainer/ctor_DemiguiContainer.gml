@@ -15,9 +15,10 @@ function DemiguiContainer(_instance, _joint = undefined) : DemiguiComponent(_ins
     
     static remove_child = function(_child) {
         var _index = array_get_index(children, _child);
-        if (_index >= 0)
-            array_delete(children, _index, 1);
+        if (_index < 0)
+            return;
         
+        array_delete(children, _index, 1);
         children_count -= 1;
     }
     
@@ -47,5 +48,19 @@ function DemiguiContainer(_instance, _joint = undefined) : DemiguiComponent(_ins
             array_delete(joints, _index, 1);
         
         joints_count -= 1;
+    }
+    
+    // -------
+    // Cleanup
+    // -------
+    
+    static remove = function() {
+        repeat (joints_count) {
+            var _joint = array_pop(joints);
+            _joint.detach_parent();
+        }
+        
+        var _base_remove = DemiguiComponent.remove;
+        _base_remove();
     }
 }

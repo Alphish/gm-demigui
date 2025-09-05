@@ -9,6 +9,10 @@ function DemiguiComponent(_instance, _joint = undefined) constructor {
     parent = !is_undefined(joint) ? joint.parent : undefined;
     level = !is_undefined(parent) ? parent.level + 1 : 0;
     
+    // -----------
+    // Move/resize
+    // -----------
+    
     static move_by = function(_xoffset, _yoffset) {
         if (_xoffset == 0 && _yoffset == 0)
             return;
@@ -40,13 +44,6 @@ function DemiguiComponent(_instance, _joint = undefined) constructor {
         sys_Demigui.schedule_joint_update(hook);
     }
     
-    static remove = function() {
-        if (!is_undefined(joint))
-            joint.detach_child();
-        
-        instance_destroy(instance);
-    }
-    
     // ------
     // Joints
     // ------
@@ -63,5 +60,16 @@ function DemiguiComponent(_instance, _joint = undefined) constructor {
     static update_instance = function() {
         instance.x = x;
         instance.y = y;
+    }
+    
+    // ------
+    // Cleanup
+    // ------
+    
+    static remove = function() {
+        if (!is_undefined(joint))
+            joint.detach_child();
+        
+        instance_destroy(instance);
     }
 }
