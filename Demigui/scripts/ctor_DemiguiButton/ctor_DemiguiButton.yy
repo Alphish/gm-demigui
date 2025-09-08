@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ctor_DemiguiButton",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ctor_DemiguiButton",
+  "parent":{
+    "name":"Controls",
+    "path":"folders/_Packages/Alphish/Demigui/Components/Controls.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

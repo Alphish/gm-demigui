@@ -22,3 +22,10 @@ DemiguiException.not_implemented = function(_context, _method) {
         $"{_type}.{_method} was not implemented."
         );
 }
+
+DemiguiException.invalid_typeof = function(_entity, _expected, _value) {
+    return new DemiguiException(
+        nameof(invalid_typeof),
+        $"{_entity} should be {_expected}; got {typeof(_value)} instead."
+        );
+}

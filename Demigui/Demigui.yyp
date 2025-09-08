@@ -40,6 +40,7 @@
     {"id":{"name":"ui_TestComponent","path":"objects/ui_TestComponent/ui_TestComponent.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"ctor_DemiguiBlankCommand","path":"scripts/ctor_DemiguiBlankCommand/ctor_DemiguiBlankCommand.yy",},},
+    {"id":{"name":"ctor_DemiguiButton","path":"scripts/ctor_DemiguiButton/ctor_DemiguiButton.yy",},},
     {"id":{"name":"ctor_DemiguiCanvas","path":"scripts/ctor_DemiguiCanvas/ctor_DemiguiCanvas.yy",},},
     {"id":{"name":"ctor_DemiguiCommand","path":"scripts/ctor_DemiguiCommand/ctor_DemiguiCommand.yy",},},
     {"id":{"name":"ctor_DemiguiComponent","path":"scripts/ctor_DemiguiComponent/ctor_DemiguiComponent.yy",},},
