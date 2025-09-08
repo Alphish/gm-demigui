@@ -1,0 +1,1 @@
+pointer.update_hoverables();
