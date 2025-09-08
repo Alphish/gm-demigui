@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"ui_TestButton",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"ui_TestButton",
   "overriddenProperties":[],

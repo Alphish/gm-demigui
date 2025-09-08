@@ -38,7 +38,7 @@
     {"id":{"name":"ui_DemiguiCanvas","path":"objects/ui_DemiguiCanvas/ui_DemiguiCanvas.yy",},},
     {"id":{"name":"ui_TestButton","path":"objects/ui_TestButton/ui_TestButton.yy",},},
     {"id":{"name":"ui_TestComponent","path":"objects/ui_TestComponent/ui_TestComponent.yy",},},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"rm_Test","path":"rooms/rm_Test/rm_Test.yy",},},
     {"id":{"name":"ctor_DemiguiBlankCommand","path":"scripts/ctor_DemiguiBlankCommand/ctor_DemiguiBlankCommand.yy",},},
     {"id":{"name":"ctor_DemiguiButton","path":"scripts/ctor_DemiguiButton/ctor_DemiguiButton.yy",},},
     {"id":{"name":"ctor_DemiguiCanvas","path":"scripts/ctor_DemiguiCanvas/ctor_DemiguiCanvas.yy",},},
@@ -55,7 +55,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_Test","path":"rooms/rm_Test/rm_Test.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
