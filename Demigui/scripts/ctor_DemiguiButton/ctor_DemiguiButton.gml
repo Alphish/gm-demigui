@@ -17,11 +17,11 @@ function DemiguiButton(_instance, _joint = undefined) : DemiguiControl(_instance
     }
     
     static on_hover = function(_pointer) {
-        is_hovered = true;
+        add_modifier("hover");
     }
     
     static on_unhover = function(_pointer) {
-        is_hovered = false;
+        remove_modifier("hover");
     }
     
     static on_click = function(_pointer) {

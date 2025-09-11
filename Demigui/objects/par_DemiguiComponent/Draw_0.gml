@@ -1,0 +1,1 @@
+renderer.draw(x, y);

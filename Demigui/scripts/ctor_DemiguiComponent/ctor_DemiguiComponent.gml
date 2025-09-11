@@ -9,6 +9,11 @@ function DemiguiComponent(_instance, _joint = undefined) constructor {
     parent = !is_undefined(joint) ? joint.parent : undefined;
     level = !is_undefined(parent) ? parent.level + 1 : 0;
     
+    style = undefined;
+    style_modifiers = undefined;
+    style_values = undefined;
+    renderer = undefined;
+    
     // -----------
     // Move/resize
     // -----------
@@ -51,6 +56,36 @@ function DemiguiComponent(_instance, _joint = undefined) constructor {
     static update_joints = function() {
         if (!is_undefined(joint))
             joint.update_from_child();
+    }
+    
+    // -------
+    // Styling
+    // -------
+    
+    static set_style_value = function(_key, _value) {
+        style_values ??= {};
+        style_values[$ _key] = _value;
+        renderer.update_required = true;
+    }
+    
+    static add_modifier = function(_modifier) {
+        style_modifiers ??= {};
+        style_modifiers[$ _modifier] = true;
+        renderer.update_required = true;
+    }
+    
+    static remove_modifier = function(_modifier) {
+        style_modifiers ??= {};
+        struct_remove(style_modifiers, _modifier);
+        renderer.update_required = true;
+    }
+    
+    static set_style = function(_style) {
+        if (is_undefined(_style))
+            return;
+        
+        style = _style;
+        renderer.update_required = true;
     }
     
     // --------
