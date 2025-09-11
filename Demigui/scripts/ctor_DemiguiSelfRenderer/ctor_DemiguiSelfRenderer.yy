@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ctor_DemiguiSelfRenderer",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ctor_DemiguiSelfRenderer",
+  "parent":{
+    "name":"Rendering",
+    "path":"folders/_Packages/Alphish/Demigui/Rendering.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
