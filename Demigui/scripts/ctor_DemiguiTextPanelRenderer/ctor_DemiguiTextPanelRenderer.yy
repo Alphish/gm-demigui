@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ctor_DemiguiTextPanelRenderer",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ctor_DemiguiTextPanelRenderer",
+  "parent":{
+    "name":"Rendering",
+    "path":"folders/_Packages/Alphish/Demigui/Rendering.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
