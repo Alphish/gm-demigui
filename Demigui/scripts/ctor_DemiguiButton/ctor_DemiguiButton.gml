@@ -1,6 +1,4 @@
 function DemiguiButton(_instance, _joint = undefined) : DemiguiControl(_instance, _joint) constructor {
-    is_hovered = false;
-    
     if (is_undefined(instance.command))
         command = DemiguiBlankCommand.instance;
     else if (is_callable(instance.command))
