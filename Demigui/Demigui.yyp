@@ -44,6 +44,7 @@
     {"id":{"name":"ui_DemiguiSelectButton","path":"objects/ui_DemiguiSelectButton/ui_DemiguiSelectButton.yy",},},
     {"id":{"name":"ui_TestButton","path":"objects/ui_TestButton/ui_TestButton.yy",},},
     {"id":{"name":"ui_TestComponent","path":"objects/ui_TestComponent/ui_TestComponent.yy",},},
+    {"id":{"name":"ui_TestSelectButton","path":"objects/ui_TestSelectButton/ui_TestSelectButton.yy",},},
     {"id":{"name":"rm_Test","path":"rooms/rm_Test/rm_Test.yy",},},
     {"id":{"name":"ctor_DemiguiBlankCommand","path":"scripts/ctor_DemiguiBlankCommand/ctor_DemiguiBlankCommand.yy",},},
     {"id":{"name":"ctor_DemiguiButton","path":"scripts/ctor_DemiguiButton/ctor_DemiguiButton.yy",},},
