@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"ctor_DemiguiCommand",
   "parent":{
-    "name":"Bindings",
-    "path":"folders/_Packages/Alphish/Demigui/Bindings.yy",
+    "name":"Commands",
+    "path":"folders/_Packages/Alphish/Demigui/Commands.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -12,7 +12,12 @@ function DemiguiComponent(_instance, _joint = undefined) constructor {
     style = undefined;
     style_modifiers = undefined;
     style_values = undefined;
-    renderer = undefined;
+    
+    if (is_callable(_instance.renderer)) {
+        _instance.renderer = new _instance.renderer(self); // replace a constructor with an instance
+    }
+    renderer = _instance.renderer;
+    set_style(_instance.style);
     
     // -----------
     // Move/resize
@@ -97,9 +102,9 @@ function DemiguiComponent(_instance, _joint = undefined) constructor {
         instance.y = y;
     }
     
-    // ------
+    // -------
     // Cleanup
-    // ------
+    // -------
     
     static remove = function() {
         if (!is_undefined(joint))

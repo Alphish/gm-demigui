@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ctor_DemiguiValueSource",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ctor_DemiguiValueSource",
+  "parent":{
+    "name":"Data",
+    "path":"folders/_Packages/Alphish/Demigui/Data.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

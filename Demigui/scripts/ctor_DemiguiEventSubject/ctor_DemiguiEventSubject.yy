@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ctor_DemiguiEventSubject",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ctor_DemiguiEventSubject",
+  "parent":{
+    "name":"Events",
+    "path":"folders/_Packages/Alphish/Demigui/Events.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
