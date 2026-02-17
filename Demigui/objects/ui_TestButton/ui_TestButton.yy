@@ -31,23 +31,23 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"text","filters":[],"listItems":[],"multiselect":false,"name":"text","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":2,},
-    {"$GMObjectProperty":"v1","%Name":"font","filters":[
+    {"$GMObjectProperty":"v2","%Name":"text","filters":[],"listItems":[],"multiselect":false,"name":"text","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":2,},
+    {"$GMObjectProperty":"v2","%Name":"font","filters":[
         "GMFont",
       ],"listItems":[],"multiselect":false,"name":"font","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"fnt_Test","path":"fonts/fnt_Test/fnt_Test.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"fnt_Test","varType":5,},
-    {"$GMObjectProperty":"v1","%Name":"halign","filters":[],"listItems":[
+    {"$GMObjectProperty":"v2","%Name":"halign","filters":[],"listItems":[
         "fa_left",
         "fa_center",
         "fa_right",
       ],"multiselect":false,"name":"halign","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"fa_center","varType":6,},
-    {"$GMObjectProperty":"v1","%Name":"valign","filters":[],"listItems":[
+    {"$GMObjectProperty":"v2","%Name":"valign","filters":[],"listItems":[
         "fa_top",
         "fa_middle",
         "fa_bottom",
       ],"multiselect":false,"name":"valign","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"fa_middle","varType":6,},
-    {"$GMObjectProperty":"v1","%Name":"text_color","filters":[],"listItems":[],"multiselect":false,"name":"text_color","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$FF000000","varType":7,},
-    {"$GMObjectProperty":"v1","%Name":"text_xoffset","filters":[],"listItems":[],"multiselect":false,"name":"text_xoffset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"text_yoffset","filters":[],"listItems":[],"multiselect":false,"name":"text_yoffset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"text_color","filters":[],"listItems":[],"multiselect":false,"name":"text_color","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$FF000000","varType":7,},
+    {"$GMObjectProperty":"v2","%Name":"text_xoffset","filters":[],"listItems":[],"multiselect":false,"name":"text_xoffset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"text_yoffset","filters":[],"listItems":[],"multiselect":false,"name":"text_yoffset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
