@@ -1,8 +1,8 @@
 function DemiguiButton(_instance, _joint = undefined) : DemiguiControl(_instance, _joint) constructor {
     if (is_undefined(instance.command))
-        command = DemiguiBlankCommand.instance;
+        command = new CimpliCommand(function() {}, function() { return false; });
     else if (is_callable(instance.command))
-        command = new DemiguiCommand(instance.command);
+        command = new CimpliCommand(instance.command);
     else
         throw DemiguiException.invalid_typeof("Button command", "callable or undefined", instance.command);
     

@@ -1,3 +1,3 @@
 pointer = new DemiguiPointer();
 
-test_string = new DemiguiValueSource("Dolor");
+test_string = new CimpliProperty("Dolor");

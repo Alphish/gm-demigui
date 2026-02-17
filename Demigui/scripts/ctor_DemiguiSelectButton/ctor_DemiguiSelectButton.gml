@@ -1,9 +1,9 @@
 function DemiguiSelectButton(_instance, _joint = undefined) : DemiguiControl(_instance, _joint) constructor {
     select_value = _instance.select_value;
-    value_source = _instance.value_source;
-    value_subscription = value_source.value_changed.subscribe(method(self, on_value_change));
+    value_property = _instance.value_property;
+    value_observer = value_property.value_changed.add_handler(method(self, on_value_change));
     
-    on_value_change(value_source.get_value());
+    on_value_change(value_property.get_value());
     
     static on_value_change = function(_value) {
         if (_value == select_value)
@@ -29,7 +29,7 @@ function DemiguiSelectButton(_instance, _joint = undefined) : DemiguiControl(_in
     }
     
     static on_click = function(_pointer) {
-        value_source.set_value(select_value);
+        value_property.set_value(select_value);
     }
     
     // -------
@@ -40,6 +40,6 @@ function DemiguiSelectButton(_instance, _joint = undefined) : DemiguiControl(_in
         var _base_remove = DemiguiControl.remove;
         _base_remove();
         
-        value_subscription.unsubscribe();
+        value_observer.remove();
     }
 }
