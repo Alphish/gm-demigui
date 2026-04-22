@@ -15,16 +15,15 @@ unregister_control_node = function(_node) {
     control_nodes_count -= 1;
 }
 
-schedule_joint_update = function(_component) {
-    _component.update_joints();
-}
-
-schedule_parent_update = function(_joint) {
-    _joint.update_parent();
-}
-
-schedule_child_update = function(_joint) {
-    _joint.update_child();
+schedule_link_move_update = function(_component) {
+    if (!is_undefined(_component.link))
+        _component.link.on_child_move();
+    
+    if (struct_exists(_component, "children")) {
+        for (var i = 0, _count = array_length(_component.children); i < _count; i++) {
+            _component.children[i].link.on_parent_move();
+        }
+    }
 }
 
 schedule_instance_update = function(_component) {

@@ -3,9 +3,8 @@
 width ??= sprite_width;
 height ??= sprite_height;
 
-component_data = new data_type(id, joint);
+component_data = new data_type(id);
 
-delete joint;
 delete data_type;
 delete width;
 delete height;

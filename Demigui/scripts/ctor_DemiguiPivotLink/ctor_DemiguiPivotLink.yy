@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ctor_DemiguiPivotLink",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ctor_DemiguiPivotLink",
+  "parent":{
+    "name":"Links",
+    "path":"folders/_Packages/Alphish/Demigui/Components/Links.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
