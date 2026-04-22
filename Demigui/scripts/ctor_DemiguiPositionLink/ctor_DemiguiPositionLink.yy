@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ctor_DemiguiPositionLink",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ctor_DemiguiPositionLink",
+  "parent":{
+    "name":"Links",
+    "path":"folders/_Packages/Alphish/Demigui/Components/Links.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,1 +1,1 @@
-component_data.remove();
+component_data.detach();

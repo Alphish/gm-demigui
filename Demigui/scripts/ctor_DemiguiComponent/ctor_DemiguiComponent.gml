@@ -1,13 +1,14 @@
-function DemiguiComponent(_instance, _joint = undefined) constructor {
+function DemiguiComponent(_instance) constructor {
     instance = _instance;
+    
     x = _instance.x;
     y = _instance.y;
     width = _instance.width;
     height = _instance.height;
     
-    joint = _joint;
-    parent = !is_undefined(joint) ? joint.parent : undefined;
-    level = !is_undefined(parent) ? parent.level + 1 : 0;
+    link = undefined;
+    parent = undefined;
+    control_node = undefined;
     
     style = undefined;
     style_modifiers = undefined;
@@ -37,30 +38,50 @@ function DemiguiComponent(_instance, _joint = undefined) constructor {
     static move_self_by = function(_xoffset, _yoffset) {
         x += _xoffset;
         y += _yoffset;
-        sys_Demigui.schedule_joint_update(self);
+        sys_Demigui.schedule_link_move_update(self);
         sys_Demigui.schedule_instance_update(self);
     }
     
-    static resize = function(_width, _height) {
-        if (_width == width && _height == height)
-            return;
+    // -----
+    // Links
+    // -----
+    
+    static get_control_group = function() {
+        var _ancestor = parent;
+        while (is_undefined(_ancestor.control_node)) {
+            _ancestor = _ancestor.parent;
+        }
+        return _ancestor.control_node;
+    }
+    
+    static attach_to = function(_parent) {
+        attach_with(new DemiguiLink(_parent, self));
+    }
+    
+    static attach_with = function(_link) {
+        _link.link_ends();
+    }
+    
+    static detach = function() {
+        if (!is_undefined(link))
+            link.unlink_ends();
+    }
+    
+    static link_parent = function(_parent) {
+        parent = _parent;
+        if (!is_undefined(control_node)) {
+            var _control_group = get_control_group();
+            control_node.attach_to(_control_group);
+        }
+        sys_Demigui.schedule_instance_update(self);
+    }
+    
+    static unlink_parent = function() {
+        parent = undefined;
+        if (!is_undefined(control_node))
+            control_node.detach();
         
-        resize_self(_width, _height);
-    }
-    
-    static resize_self = function(_width, _height) {
-        width = _width;
-        height = _height;
-        sys_Demigui.schedule_joint_update(hook);
-    }
-    
-    // ------
-    // Joints
-    // ------
-    
-    static update_joints = function() {
-        if (!is_undefined(joint))
-            joint.update_from_child();
+        sys_Demigui.schedule_instance_update(self);
     }
     
     // -------
@@ -100,16 +121,5 @@ function DemiguiComponent(_instance, _joint = undefined) constructor {
     static update_instance = function() {
         instance.x = x;
         instance.y = y;
-    }
-    
-    // -------
-    // Cleanup
-    // -------
-    
-    static remove = function() {
-        if (!is_undefined(joint))
-            joint.detach_child();
-        
-        instance_destroy(instance);
     }
 }

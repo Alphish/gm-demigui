@@ -1,4 +1,4 @@
-function DemiguiSelectButton(_instance, _joint = undefined) : DemiguiControl(_instance, _joint) constructor {
+function DemiguiSelectButton(_instance) : DemiguiControl(_instance) constructor {
     select_value = _instance.select_value;
     value_property = _instance.value_property;
     value_observer = value_property.value_changed.add_handler(method(self, on_value_change));

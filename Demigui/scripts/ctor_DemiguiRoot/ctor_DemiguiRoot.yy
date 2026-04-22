@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ctor_DemiguiRoot",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ctor_DemiguiRoot",
+  "parent":{
+    "name":"Containers",
+    "path":"folders/_Packages/Alphish/Demigui/Components/Containers.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
