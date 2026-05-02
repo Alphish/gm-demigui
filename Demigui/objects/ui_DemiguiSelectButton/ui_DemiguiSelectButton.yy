@@ -3,11 +3,12 @@
   "%Name":"ui_DemiguiSelectButton",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"ui_DemiguiSelectButton",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_DemiguiComponent","path":"objects/par_DemiguiComponent/par_DemiguiComponent.yy",},"propertyId":{"name":"data_type","path":"objects/par_DemiguiComponent/par_DemiguiComponent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"DemiguiSelectButton",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_DemiguiComponent","path":"objects/par_DemiguiComponent/par_DemiguiComponent.yy",},"propertyId":{"name":"behavior","path":"objects/par_DemiguiComponent/par_DemiguiComponent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"DemiguiSelectButtonBehavior",},
   ],
   "parent":{
     "name":"Controls",

@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"ctor_DemiguiRoot",
+  "%Name":"ctor_DemiguiRootBehavior",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"ctor_DemiguiRoot",
+  "name":"ctor_DemiguiRootBehavior",
   "parent":{
     "name":"Containers",
     "path":"folders/_Packages/Alphish/Demigui/Components/Containers.yy",

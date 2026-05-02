@@ -24,7 +24,7 @@ function DemiguiTextPanelRenderer(_component) : DemiguiRenderer(_component) cons
     // -------
     
     static update_begin = function() {
-        var _instance = component.instance;
+        var _instance = component;
         bg_sprite = sprite_exists(_instance.sprite_index) ? _instance.sprite_index : undefined;
         bg_image = _instance.image_index;
         bg_color = _instance.image_blend;
@@ -62,7 +62,7 @@ function DemiguiTextPanelRenderer(_component) : DemiguiRenderer(_component) cons
         text_y = floor(height * text_valign / 2 + text_yoffset);
         
         if (is_undefined(bg_alpha))
-            bg_alpha = !is_undefined(bg_sprite) ? _instance.image_alpha : 0;
+            bg_alpha = !is_undefined(bg_sprite) ? component.image_alpha : 0;
     }
     
     // -------

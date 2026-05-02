@@ -19,8 +19,8 @@ function DemiguiPointer(_root) constructor {
                 populate_hoverables(_node.children[i]);
             }
         } else {
-            if (is_callable(_node.control.component_data[$ "check_hover"]))
-                array_push(hoverables, _node.control.component_data);
+            if (is_callable(_node.control.behavior[$ "check_hover"]))
+                array_push(hoverables, _node.control);
         }
     }
     
@@ -37,28 +37,28 @@ function DemiguiPointer(_root) constructor {
         
         for (var i = 0, _count = array_length(hoverables); i < _count; i++) {
             var _hoverable = hoverables[i];
-            if (!_hoverable.check_hover(self))
+            if (!_hoverable.behavior.check_hover(_hoverable, self))
                 continue;
             
-            if (is_undefined(hover_control) || _hoverable.instance.depth < hover_control.instance.depth)
+            if (is_undefined(hover_control) || _hoverable.depth < hover_control.depth)
                 hover_control = _hoverable;
         }
         
         if (_previous_hover == hover_control)
             return;
         
-        if (!is_undefined(_previous_hover) && !is_undefined(_previous_hover[$ "on_unhover"]))
-            _previous_hover.on_unhover(self);
+        if (!is_undefined(_previous_hover) && !is_undefined(_previous_hover.behavior[$ "on_unhover"]))
+            _previous_hover.behavior.on_unhover(_previous_hover, self);
         
-        if (!is_undefined(hover_control) && !is_undefined(hover_control[$ "on_hover"]))
-            hover_control.on_hover(self);
+        if (!is_undefined(hover_control) && !is_undefined(hover_control.behavior[$ "on_hover"]))
+            hover_control.behavior.on_hover(hover_control, self);
     }
     
     static try_interact = function() {
         if (is_undefined(hover_control))
             return;
         
-        if (mouse_check_button_pressed(mb_left) && !is_undefined(hover_control[$ "on_click"]))
-            hover_control.on_click(self);
+        if (mouse_check_button_pressed(mb_left) && !is_undefined(hover_control.behavior[$ "on_click"]))
+            hover_control.behavior.on_click(hover_control, self);
     }
 }

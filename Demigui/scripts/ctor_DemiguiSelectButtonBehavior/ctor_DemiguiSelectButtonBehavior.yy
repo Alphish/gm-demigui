@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"ctor_DemiguiControl",
+  "%Name":"ctor_DemiguiSelectButtonBehavior",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"ctor_DemiguiControl",
+  "name":"ctor_DemiguiSelectButtonBehavior",
   "parent":{
     "name":"Controls",
     "path":"folders/_Packages/Alphish/Demigui/Components/Controls.yy",

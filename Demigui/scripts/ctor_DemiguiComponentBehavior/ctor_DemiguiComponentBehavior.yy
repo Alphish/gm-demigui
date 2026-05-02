@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"ctor_DemiguiComponent",
+  "%Name":"ctor_DemiguiComponentBehavior",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"ctor_DemiguiComponent",
+  "name":"ctor_DemiguiComponentBehavior",
   "parent":{
     "name":"Components",
     "path":"folders/_Packages/Alphish/Demigui/Components.yy",

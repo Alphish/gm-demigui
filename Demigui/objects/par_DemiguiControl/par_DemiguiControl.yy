@@ -1,11 +1,13 @@
 {
   "$GMObject":"",
   "%Name":"par_DemiguiControl",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"par_DemiguiControl",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_DemiguiComponent","path":"objects/par_DemiguiComponent/par_DemiguiComponent.yy",},"propertyId":{"name":"data_type","path":"objects/par_DemiguiComponent/par_DemiguiComponent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"DemiguiControl",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_DemiguiComponent","path":"objects/par_DemiguiComponent/par_DemiguiComponent.yy",},"propertyId":{"name":"behavior","path":"objects/par_DemiguiComponent/par_DemiguiComponent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"DemiguiComponentBehavior",},
   ],
   "parent":{
     "name":"Controls",

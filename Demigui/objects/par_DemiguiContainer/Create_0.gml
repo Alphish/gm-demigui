@@ -1,3 +1,6 @@
 event_inherited();
 
-delete is_control_group;
+children = [];
+
+if (is_control_group)
+    control_node = new DemiguiControlNode(id, /* is container */ true);

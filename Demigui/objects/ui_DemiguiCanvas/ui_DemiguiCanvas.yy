@@ -5,7 +5,7 @@
   "managed":true,
   "name":"ui_DemiguiCanvas",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_DemiguiComponent","path":"objects/par_DemiguiComponent/par_DemiguiComponent.yy",},"propertyId":{"name":"data_type","path":"objects/par_DemiguiComponent/par_DemiguiComponent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"DemiguiCanvas",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_DemiguiComponent","path":"objects/par_DemiguiComponent/par_DemiguiComponent.yy",},"propertyId":{"name":"behavior","path":"objects/par_DemiguiComponent/par_DemiguiComponent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"DemiguiContainerBehavior",},
   ],
   "parent":{
     "name":"Containers",

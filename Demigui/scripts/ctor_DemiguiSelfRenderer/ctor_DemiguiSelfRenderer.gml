@@ -4,7 +4,7 @@ function DemiguiSelfRenderer(_component) : DemiguiRenderer(_component) construct
     }
     
     static draw = function(_x, _y) {
-        with (component.instance) {
+        with (component) {
             draw_self();
         }
     }

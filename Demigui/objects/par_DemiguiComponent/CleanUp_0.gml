@@ -1,1 +1,2 @@
-component_data.detach();
+if (!is_undefined(link))
+    link.unlink_ends();
