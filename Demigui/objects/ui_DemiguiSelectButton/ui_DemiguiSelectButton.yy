@@ -7,9 +7,7 @@
   ],
   "managed":true,
   "name":"ui_DemiguiSelectButton",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_DemiguiComponent","path":"objects/par_DemiguiComponent/par_DemiguiComponent.yy",},"propertyId":{"name":"behavior","path":"objects/par_DemiguiComponent/par_DemiguiComponent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"DemiguiSelectButtonBehavior",},
-  ],
+  "overriddenProperties":[],
   "parent":{
     "name":"Controls",
     "path":"folders/_Packages/Alphish/Demigui/Components/Controls.yy",

@@ -18,9 +18,8 @@ function DemiguiPointer(_root) constructor {
             for (var i = 0, _count = array_length(_node.children); i < _count; i++) {
                 populate_hoverables(_node.children[i]);
             }
-        } else {
-            if (is_callable(_node.control.behavior[$ "check_hover"]))
-                array_push(hoverables, _node.control);
+        } else if (!is_undefined(_node.control[$ "pointer_handler"])) {
+            array_push(hoverables, _node.control);
         }
     }
     
@@ -37,7 +36,7 @@ function DemiguiPointer(_root) constructor {
         
         for (var i = 0, _count = array_length(hoverables); i < _count; i++) {
             var _hoverable = hoverables[i];
-            if (!_hoverable.behavior.check_hover(_hoverable, self))
+            if (!_hoverable.pointer_handler.check_hover(self))
                 continue;
             
             if (is_undefined(hover_control) || _hoverable.depth < hover_control.depth)
@@ -47,18 +46,18 @@ function DemiguiPointer(_root) constructor {
         if (_previous_hover == hover_control)
             return;
         
-        if (!is_undefined(_previous_hover) && !is_undefined(_previous_hover.behavior[$ "on_unhover"]))
-            _previous_hover.behavior.on_unhover(_previous_hover, self);
+        if (!is_undefined(_previous_hover))
+            _previous_hover.pointer_handler.on_unhover(self);
         
-        if (!is_undefined(hover_control) && !is_undefined(hover_control.behavior[$ "on_hover"]))
-            hover_control.behavior.on_hover(hover_control, self);
+        if (!is_undefined(hover_control))
+            hover_control.pointer_handler.on_hover(self);
     }
     
     static try_interact = function() {
         if (is_undefined(hover_control))
             return;
         
-        if (mouse_check_button_pressed(mb_left) && !is_undefined(hover_control.behavior[$ "on_click"]))
-            hover_control.behavior.on_click(hover_control, self);
+        if (mouse_check_button_pressed(mb_left))
+            hover_control.pointer_handler.on_click(hover_control, self);
     }
 }
