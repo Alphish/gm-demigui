@@ -5,15 +5,15 @@
   "managed":true,
   "name":"ui_DemiguiCanvas",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_DemiguiComponent","path":"objects/par_DemiguiComponent/par_DemiguiComponent.yy",},"propertyId":{"name":"behavior","path":"objects/par_DemiguiComponent/par_DemiguiComponent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"DemiguiContainerBehavior",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"par_DemiguiComponent","path":"objects/par_DemiguiComponent/par_DemiguiComponent.yy",},"propertyId":{"name":"is_container","path":"objects/par_DemiguiComponent/par_DemiguiComponent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
   ],
   "parent":{
     "name":"Containers",
     "path":"folders/_Packages/Alphish/Demigui/Components/Containers.yy",
   },
   "parentObjectId":{
-    "name":"par_DemiguiContainer",
-    "path":"objects/par_DemiguiContainer/par_DemiguiContainer.yy",
+    "name":"par_DemiguiComponent",
+    "path":"objects/par_DemiguiComponent/par_DemiguiComponent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

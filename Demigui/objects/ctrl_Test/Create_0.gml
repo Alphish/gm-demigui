@@ -1,5 +1,5 @@
 event_inherited();
 
-pointer = new DemiguiPointer(control_node);
+pointer = new DemiguiPointer(node);
 
 test_string = new CimpliProperty("Dolor");

@@ -14,12 +14,12 @@ function DemiguiPointer(_root) constructor {
     }
     
     static populate_hoverables = function(_node) {
-        if (_node.is_container) {
-            for (var i = 0, _count = array_length(_node.children); i < _count; i++) {
-                populate_hoverables(_node.children[i]);
+        if (_node.component.is_container) {
+            for (var i = 0, _count = array_length(_node.control_children); i < _count; i++) {
+                populate_hoverables(_node.control_children[i]);
             }
-        } else if (!is_undefined(_node.control[$ "pointer_handler"])) {
-            array_push(hoverables, _node.control);
+        } else if (!is_undefined(_node.component[$ "pointer_handler"])) {
+            array_push(hoverables, _node.component);
         }
     }
     

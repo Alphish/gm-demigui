@@ -3,18 +3,8 @@ function DemiguiLink(_parent, _child) constructor {
     child = _child;
     
     static link_ends = function() {
-        parent.behavior.link_child(parent, child);
-        child.behavior.link_parent(child, parent);
-        child.link = self;
-        on_link();
+        child.node.attach_with(self);
         return self;
-    }
-    
-    static unlink_ends = function() {
-        parent.behavior.unlink_child(parent, child);
-        child.behavior.unlink_parent(child, parent); 
-        child.link = undefined;
-        on_unlink();
     }
     
     static on_link = function() {

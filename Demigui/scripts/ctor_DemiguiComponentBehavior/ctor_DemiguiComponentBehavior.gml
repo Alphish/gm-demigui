@@ -16,37 +16,6 @@ function DemiguiComponentBehavior() constructor {
         _instance.behavior.move_by(_instance, _x - _instance.x, _y - _instance.y);
     }
     
-    // -----
-    // Links
-    // -----
-    
-    static get_control_group = function(_instance) {
-        var _ancestor = _instance.parent;
-        while (is_undefined(_ancestor.control_node)) {
-            _ancestor = _ancestor.parent;
-        }
-        return _ancestor.control_node;
-    }
-    
-    static attach_to = function(_instance, _parent) {
-        var _link = new DemiguiLink(_parent, _instance);
-        _link.link_ends();
-    }
-    
-    static link_parent = function(_instance, _parent) {
-        _instance.parent = _parent;
-        if (!is_undefined(_instance.control_node)) {
-            var _control_group = _instance.behavior.get_control_group(_instance);
-            _instance.control_node.attach_to(_control_group);
-        }
-    }
-    
-    static unlink_parent = function(_instance) {
-        _instance.parent = undefined;
-        if (!is_undefined(_instance.control_node))
-            _instance.control_node.detach();
-    }
-    
     // -------
     // Styling
     // -------

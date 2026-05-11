@@ -6,9 +6,7 @@ height ??= sprite_height;
 if (is_callable(behavior))
     behavior = new behavior();
 
-link = undefined;
-parent = undefined;
-control_node = undefined;
+node = new DemiguiComponentNode(id);
 
 style_modifiers = undefined;
 style_values = undefined;

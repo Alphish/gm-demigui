@@ -1,2 +1,1 @@
-if (!is_undefined(link))
-    link.unlink_ends();
+node.prune();
