@@ -39,7 +39,7 @@ function DemiguiPivotLink(_parent, _child) : DemiguiLink(_parent, _child) constr
     static on_link = function() {
         var _child_x = parent.x + parent.width * parent_width_amount - child.width * child_width_amount + x_offset;
         var _child_y = parent.y + parent.height * parent_height_amount - child.height * child_height_amount + y_offset;
-        child.move_to(_child_x, _child_y);
+        child.behavior.move_to(child, _child_x, _child_y);
     }
     
     static on_child_move = function() {
@@ -49,7 +49,7 @@ function DemiguiPivotLink(_parent, _child) : DemiguiLink(_parent, _child) constr
     static on_parent_move = function() {
         var _child_x = parent.x + parent.width * parent_width_amount - child.width * child_width_amount + x_offset;
         var _child_y = parent.y + parent.height * parent_height_amount - child.height * child_height_amount + y_offset;
-        child.move_to(_child_x, _child_y);
+        child.behavior.move_to(child, _child_x, _child_y);
     }
 }
 

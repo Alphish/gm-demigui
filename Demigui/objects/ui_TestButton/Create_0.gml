@@ -1,13 +1,13 @@
 // Inherit the parent event
 event_inherited();
 
-component_data.set_style_value("text", text);
-component_data.set_style_value("font", font);
-component_data.set_style_value("halign", halign);
-component_data.set_style_value("valign", valign);
-component_data.set_style_value("color", text_color);
-component_data.set_style_value("text_xoffset", text_xoffset);
-component_data.set_style_value("text_yoffset", text_yoffset);
+behavior.set_style_value(id, "text", text);
+behavior.set_style_value(id, "font", font);
+behavior.set_style_value(id, "halign", halign);
+behavior.set_style_value(id, "valign", valign);
+behavior.set_style_value(id, "color", text_color);
+behavior.set_style_value(id, "text_xoffset", text_xoffset);
+behavior.set_style_value(id, "text_yoffset", text_yoffset);
 
 delete text;
 delete font;

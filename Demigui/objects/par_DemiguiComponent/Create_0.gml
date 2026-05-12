@@ -3,9 +3,13 @@
 width ??= sprite_width;
 height ??= sprite_height;
 
-component_data = new data_type(id);
+if (is_callable(behavior))
+    behavior = new behavior();
 
-delete data_type;
-delete width;
-delete height;
-delete style;
+node = new DemiguiComponentNode(id);
+
+style_modifiers = undefined;
+style_values = undefined;
+
+if (is_callable(renderer))
+    renderer = new renderer(self); // replace a constructor with an instance

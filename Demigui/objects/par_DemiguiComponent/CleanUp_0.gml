@@ -1,1 +1,1 @@
-component_data.detach();
+node.prune();

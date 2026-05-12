@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ctor_DemiguiPointerHandler",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ctor_DemiguiPointerHandler",
+  "parent":{
+    "name":"Input",
+    "path":"folders/_Packages/Alphish/Demigui/Input.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

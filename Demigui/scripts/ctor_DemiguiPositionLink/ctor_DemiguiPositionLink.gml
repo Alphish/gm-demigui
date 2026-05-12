@@ -17,11 +17,11 @@ function DemiguiPositionLink(_parent, _child, _xoffset = 0, _yoffset = 0) : Demi
     // ----------
     
     static on_link = function() {
-        child.move_to(parent.x + x_offset, parent.y + y_offset);
+        child.behavior.move_to(child, parent.x + x_offset, parent.y + y_offset);
     }
     
     static on_parent_move = function() {
-        child.move_to(parent.x + x_offset, parent.y + y_offset);
+        child.behavior.move_to(child, parent.x + x_offset, parent.y + y_offset);
     }
 }
 
