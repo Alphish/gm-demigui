@@ -2,7 +2,7 @@ function DemiguiLink(_parent, _child) constructor {
     parent = _parent;
     child = _child;
     
-    static link_ends = function() {
+    static linked = function() {
         child.node.attach_with(self);
         return self;
     }
