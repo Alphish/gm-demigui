@@ -20,29 +20,18 @@ function DemiguiComponentBehavior() constructor {
     // Styling
     // -------
     
-    static set_style_value = function(_instance, _key, _value) {
-        _instance.style_values ??= {};
-        _instance.style_values[$ _key] = _value;
-        _instance.renderer.update_required = true;
-    }
-    
     static add_modifier = function(_instance, _modifier) {
-        _instance.style_modifiers ??= {};
-        _instance.style_modifiers[$ _modifier] = true;
-        _instance.renderer.update_required = true;
+        if (!is_undefined(_instance.style))
+            _instance.style.add_modifier(_modifier);
     }
     
     static remove_modifier = function(_instance, _modifier) {
-        _instance.style_modifiers ??= {};
-        struct_remove(_instance.style_modifiers, _modifier);
-        _instance.renderer.update_required = true;
+        if (!is_undefined(_instance.style))
+            _instance.style.remove_modifier(_modifier);
     }
     
-    static set_style = function(_instance, _style) {
-        if (is_undefined(_style))
-            return;
-        
-        _instance.style = _style;
-        _instance.renderer.update_required = true;
+    static set_modifier = function(_instance, _modifier, _value) {
+        if (!is_undefined(_instance.style))
+            _instance.style.set_modifier(_modifier, _value);
     }
 }

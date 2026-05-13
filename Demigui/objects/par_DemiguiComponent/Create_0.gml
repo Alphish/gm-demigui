@@ -8,8 +8,4 @@ if (is_callable(behavior))
 
 node = new DemiguiComponentNode(id);
 
-style_modifiers = undefined;
-style_values = undefined;
-
-if (is_callable(renderer))
-    renderer = new renderer(self); // replace a constructor with an instance
+style = !is_undefined(stylesheet) ? new DemiguiStyleManager(id, stylesheet) : undefined;
