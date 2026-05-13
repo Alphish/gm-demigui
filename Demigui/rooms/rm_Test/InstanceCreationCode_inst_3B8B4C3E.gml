@@ -1,16 +1,17 @@
 var _rootlink = new DemiguiPositionLink(ctrl_Test.id, id, x, y);
-_rootlink.link_ends();
+_rootlink.linked();
 
 var _component = instance_create_depth(0, 0, other.depth - 1, ui_DemiguiCanvas, { image_blend: c_yellow, sprite_index: spr_TestComponent, image_xscale: 6, image_yscale: 4 });
-DemiguiPivotLink.between(id, _component).with_parent_align(fa_right, fa_middle).with_child_align(fa_right, fa_bottom).link_ends();
-    
+DemiguiPivotLink.between(id, _component).with_parent_align(fa_right, fa_middle).with_child_align(fa_right, fa_bottom).linked();
+
 _component = instance_create_depth(0, 0, other.depth - 1, ui_DemiguiCanvas, { image_blend: c_aqua, sprite_index: spr_TestComponent, image_xscale: 2, image_yscale: 2 });
-DemiguiPivotLink.between(id, _component).with_align(fa_left, fa_top).link_ends();
-    
-var _button_style = DemiguiStyle.create().with_value("background_alpha", 0.5);
-_button_style.get_variant(["hover"]).with_value("background_alpha", 1);
-_button_style.get_variant(["active"]).with_value("color", c_yellow);
-    
+DemiguiPivotLink.between(id, _component).with_align(fa_left, fa_top).linked();
+
+var _button_stylesheet = new DemiguiStylesheet(["hover", "active"])
+    .with_style("hover", { image_alpha: 1 })
+    .with_style("active", { text_color: c_yellow, image_alpha: 1 })
+    .with_style(["hover", "active"], { text_color: c_aqua });
+
 _component = instance_create_depth(0, 0, other.depth - 1, ui_TestButton, {
     image_blend: c_red,
     image_xscale: 8,
@@ -20,9 +21,9 @@ _component = instance_create_depth(0, 0, other.depth - 1, ui_TestButton, {
     halign: fa_left,
     text_xoffset: 8,
     text_color: c_white,
-    style: _button_style,
+    stylesheet: _button_stylesheet,
     });
-DemiguiPivotLink.between(id, _component).with_align(fa_right, fa_top).link_ends();
+DemiguiPivotLink.between(id, _component).with_align(fa_right, fa_top).linked();
     
 _component = instance_create_depth(0, 0, other.depth - 1, ui_TestSelectButton, {
     image_blend: c_gray,
@@ -32,9 +33,9 @@ _component = instance_create_depth(0, 0, other.depth - 1, ui_TestSelectButton, {
     value_property: ctrl_Test.test_string,
     text: "Lorem",
     text_color: c_white,
-    style: _button_style,
+    stylesheet: _button_stylesheet,
     });
-DemiguiPivotLink.between(id, _component).with_align(fa_left, fa_bottom).link_ends();
+DemiguiPivotLink.between(id, _component).with_align(fa_left, fa_bottom).linked();
     
 _component = instance_create_depth(0, 0, other.depth - 1, ui_TestSelectButton, {
     image_blend: c_gray,
@@ -44,9 +45,9 @@ _component = instance_create_depth(0, 0, other.depth - 1, ui_TestSelectButton, {
     value_property: ctrl_Test.test_string,
     text: "Ipsum",
     text_color: c_white,
-    style: _button_style,
+    stylesheet: _button_stylesheet,
     });
-DemiguiPivotLink.between(id, _component).with_align(fa_center, fa_bottom).link_ends();
+DemiguiPivotLink.between(id, _component).with_align(fa_center, fa_bottom).linked();
     
 _component = instance_create_depth(0, 0, other.depth - 1, ui_TestSelectButton, {
     image_blend: c_gray,
@@ -56,6 +57,6 @@ _component = instance_create_depth(0, 0, other.depth - 1, ui_TestSelectButton, {
     value_property: ctrl_Test.test_string,
     text: "Dolor",
     text_color: c_white,
-    style: _button_style,
+    stylesheet: _button_stylesheet,
     });
-DemiguiPivotLink.between(id, _component).with_align(fa_right, fa_bottom).link_ends();
+DemiguiPivotLink.between(id, _component).with_align(fa_right, fa_bottom).linked();

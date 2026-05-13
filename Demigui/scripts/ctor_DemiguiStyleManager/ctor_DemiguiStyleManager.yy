@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"ctor_DemiguiStyle",
+  "%Name":"ctor_DemiguiStyleManager",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"ctor_DemiguiStyle",
+  "name":"ctor_DemiguiStyleManager",
   "parent":{
     "name":"Styles",
     "path":"folders/_Packages/Alphish/Demigui/Drawing/Styles.yy",
