@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"funcs_DemiguiDraw",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"funcs_DemiguiDraw",
+  "parent":{
+    "name":"Drawing",
+    "path":"folders/_Packages/Alphish/Demigui/Drawing.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
