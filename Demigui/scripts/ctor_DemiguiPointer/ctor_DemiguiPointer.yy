@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"ctor_DemiguiPointer",
   "parent":{
-    "name":"Input",
-    "path":"folders/_Packages/Alphish/Demigui/Input.yy",
+    "name":"Pointer",
+    "path":"folders/_Packages/Alphish/Demigui/Input/Pointer.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
