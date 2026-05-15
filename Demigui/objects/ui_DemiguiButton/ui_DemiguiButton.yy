@@ -14,8 +14,8 @@
     "path":"folders/_Packages/Alphish/Demigui/Components/Controls.yy",
   },
   "parentObjectId":{
-    "name":"par_DemiguiComponent",
-    "path":"objects/par_DemiguiComponent/par_DemiguiComponent.yy",
+    "name":"par_DemiguiControl",
+    "path":"objects/par_DemiguiControl/par_DemiguiControl.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

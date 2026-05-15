@@ -1,26 +1,35 @@
-function DemiguiPointer(_root) constructor {
-    root = _root;
-    hoverables = [];
-    
-    hover_control = undefined;
+function DemiguiPointer() constructor {
     x = undefined;
     y = undefined;
     xprevious = undefined;
     yprevious = undefined;
     
-    static update_hoverables = function() {
-        array_resize(hoverables, 0);
-        populate_hoverables(root);
+    // -------
+    // Context
+    // -------
+    
+    context_stack = [];
+    
+    static push_context = function(_context) {
+        var _previous_context = array_last(context_stack);
+        if (!is_undefined(_previous_context))
+            _previous_context.set_hover(noone);
+        
+        array_push(context_stack, _context);
     }
     
-    static populate_hoverables = function(_node) {
-        if (_node.component.is_container) {
-            for (var i = 0, _count = array_length(_node.control_children); i < _count; i++) {
-                populate_hoverables(_node.control_children[i]);
-            }
-        } else if (!is_undefined(_node.component[$ "pointer_handler"])) {
-            array_push(hoverables, _node.component);
-        }
+    static pop_context = function(_context) {
+        while (array_pop(context_stack) != _context) {}
+    }
+    
+    // ----------
+    // Processing
+    // ----------
+    
+    static process = function() {
+        update_coordinates();
+        check_hover();
+        try_interact();
     }
     
     static update_coordinates = function() {
@@ -31,33 +40,35 @@ function DemiguiPointer(_root) constructor {
     }
     
     static check_hover = function() {
-        var _previous_hover = hover_control;
-        hover_control = undefined;
+        var _context = array_last(context_stack);
+        if (is_undefined(_context))
+            return;
         
-        for (var i = 0, _count = array_length(hoverables); i < _count; i++) {
-            var _hoverable = hoverables[i];
+        var _hoverables = _context.hoverables;
+        var _found_hover = noone;
+        
+        for (var i = 0, _count = array_length(_hoverables); i < _count; i++) {
+            var _hoverable = _hoverables[i];
             if (!_hoverable.pointer_handler.check_hover(self))
                 continue;
             
-            if (is_undefined(hover_control) || _hoverable.depth < hover_control.depth)
-                hover_control = _hoverable;
+            if (!instance_exists(_found_hover) || _hoverable.depth < _found_hover.depth)
+                _found_hover = _hoverable;
         }
         
-        if (_previous_hover == hover_control)
-            return;
-        
-        if (!is_undefined(_previous_hover))
-            _previous_hover.pointer_handler.on_unhover(self);
-        
-        if (!is_undefined(hover_control))
-            hover_control.pointer_handler.on_hover(self);
+        _context.set_hover(_found_hover);
     }
     
     static try_interact = function() {
-        if (is_undefined(hover_control))
+        var _context = array_last(context_stack);
+        if (is_undefined(_context))
+            return;
+        
+        var _control = _context.hover_control;
+        if (!instance_exists(_control))
             return;
         
         if (mouse_check_button_pressed(mb_left))
-            hover_control.pointer_handler.on_click(hover_control, self);
+            _control.pointer_handler.on_click(self);
     }
 }

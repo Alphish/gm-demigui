@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ctor_DemiguiActionTable",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ctor_DemiguiActionTable",
+  "parent":{
+    "name":"Actions",
+    "path":"folders/_Packages/Alphish/Demigui/Input/Actions.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

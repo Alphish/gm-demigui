@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ctor_DemiguiInputTree",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ctor_DemiguiInputTree",
+  "parent":{
+    "name":"Input",
+    "path":"folders/_Packages/Alphish/Demigui/Input.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
