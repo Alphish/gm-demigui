@@ -49,3 +49,9 @@ DemiguiException.invalid_argument = function(_arg, _message) {
         );
 }
 
+DemiguiException.duplicate_key = function(_entity, _key) {
+    return new DemiguiException(
+        nameof(duplicate_key),
+        $"The {_entity} with the '{_key}' key is already added."
+        );
+}
