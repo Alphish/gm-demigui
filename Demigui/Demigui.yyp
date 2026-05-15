@@ -45,6 +45,8 @@
     {"id":{"name":"ui_DemiguiLinearMenu","path":"objects/ui_DemiguiLinearMenu/ui_DemiguiLinearMenu.yy",},},
     {"id":{"name":"ui_DemiguiRoot","path":"objects/ui_DemiguiRoot/ui_DemiguiRoot.yy",},},
     {"id":{"name":"ui_DemiguiSelectButton","path":"objects/ui_DemiguiSelectButton/ui_DemiguiSelectButton.yy",},},
+    {"id":{"name":"ui_DemoInnerMenu","path":"objects/ui_DemoInnerMenu/ui_DemoInnerMenu.yy",},},
+    {"id":{"name":"ui_DemoOuterMenu","path":"objects/ui_DemoOuterMenu/ui_DemoOuterMenu.yy",},},
     {"id":{"name":"ui_TestButton","path":"objects/ui_TestButton/ui_TestButton.yy",},},
     {"id":{"name":"ui_TestComponent","path":"objects/ui_TestComponent/ui_TestComponent.yy",},},
     {"id":{"name":"ui_TestSelectButton","path":"objects/ui_TestSelectButton/ui_TestSelectButton.yy",},},
