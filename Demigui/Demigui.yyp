@@ -42,6 +42,7 @@
     {"id":{"name":"sys_Demigui","path":"objects/sys_Demigui/sys_Demigui.yy",},},
     {"id":{"name":"ui_DemiguiButton","path":"objects/ui_DemiguiButton/ui_DemiguiButton.yy",},},
     {"id":{"name":"ui_DemiguiCanvas","path":"objects/ui_DemiguiCanvas/ui_DemiguiCanvas.yy",},},
+    {"id":{"name":"ui_DemiguiLinearMenu","path":"objects/ui_DemiguiLinearMenu/ui_DemiguiLinearMenu.yy",},},
     {"id":{"name":"ui_DemiguiRoot","path":"objects/ui_DemiguiRoot/ui_DemiguiRoot.yy",},},
     {"id":{"name":"ui_DemiguiSelectButton","path":"objects/ui_DemiguiSelectButton/ui_DemiguiSelectButton.yy",},},
     {"id":{"name":"ui_TestButton","path":"objects/ui_TestButton/ui_TestButton.yy",},},
