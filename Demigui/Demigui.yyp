@@ -38,6 +38,7 @@
     {"id":{"name":"fnt_Test","path":"fonts/fnt_Test/fnt_Test.yy",},},
     {"id":{"name":"ctrl_Test","path":"objects/ctrl_Test/ctrl_Test.yy",},},
     {"id":{"name":"par_DemiguiComponent","path":"objects/par_DemiguiComponent/par_DemiguiComponent.yy",},},
+    {"id":{"name":"par_DemiguiControl","path":"objects/par_DemiguiControl/par_DemiguiControl.yy",},},
     {"id":{"name":"sys_Demigui","path":"objects/sys_Demigui/sys_Demigui.yy",},},
     {"id":{"name":"ui_DemiguiButton","path":"objects/ui_DemiguiButton/ui_DemiguiButton.yy",},},
     {"id":{"name":"ui_DemiguiCanvas","path":"objects/ui_DemiguiCanvas/ui_DemiguiCanvas.yy",},},
