@@ -10,11 +10,7 @@ function DemiguiComponentNode(_component) constructor {
     controls_count = _component.is_control ? 1 : 0;
     
     static attach_with = function(_link) {
-        var _parent = _link.parent.node;
-        if (!_parent.component.is_container)
-            throw $"Cannot attach a control node to a non-container node.";
-        
-        parent = _parent;
+        parent = _link.parent.node;
         array_push(parent.children, self);
         
         if (component.is_control) {
@@ -30,7 +26,7 @@ function DemiguiComponentNode(_component) constructor {
     
     static detach = function() {
         if (!component.is_control && controls_count > 0)
-            throw "Cannot detach a non-control node while it contains controls.";
+            throw DemiguiException.invalid_operation("Cannot detach a non-control node from its parent while it contains controls. Detach all the descendant controls first.");
         
         unlink_control_group();
         unlink_parent();
@@ -64,7 +60,7 @@ function DemiguiComponentNode(_component) constructor {
         
         var _index = array_get_index(parent.children, self);
         if (_index < 0)
-            throw "Could not find child.";
+            throw DemiguiException.unexpected_state("The child to unlink is not present in its parent's children array.");
             
         array_delete(parent.children, _index, 1);
         parent = undefined;
@@ -79,7 +75,7 @@ function DemiguiComponentNode(_component) constructor {
         
         var _control_index = array_get_index(control_group.control_children, self);
         if (_control_index < 0)
-            throw "Could not find control group child.";
+            throw DemiguiException.unexpected_state("The control to unlink is not present in its control group's children array.");
             
         array_delete(control_group.control_children, _control_index, 1);
         control_group = undefined;
@@ -91,7 +87,7 @@ function DemiguiComponentNode(_component) constructor {
             _node = _node.parent;
             
             if (is_undefined(_node))
-                throw "Could not find the control node.";
+                throw DemiguiException.invalid_operation("Could not find a control group to attach. A control component can only be attached to a branch rooted in a control group.");
         }
         return _node;
     }

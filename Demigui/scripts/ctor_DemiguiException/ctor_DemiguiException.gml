@@ -29,3 +29,23 @@ DemiguiException.invalid_typeof = function(_entity, _expected, _value) {
         $"{_entity} should be {_expected}; got {typeof(_value)} instead."
         );
 }
+
+DemiguiException.unsupported_operation = function(_message) {
+    return new DemiguiException(nameof(unsupported_operation), _message);
+}
+
+DemiguiException.invalid_operation = function(_message) {
+    return new DemiguiException(nameof(invalid_operation), _message);
+}
+
+DemiguiException.unexpected_state = function(_message) {
+    return new DemiguiException(nameof(unexpected_state), _message);
+}
+
+DemiguiException.invalid_argument = function(_arg, _message) {
+    return new DemiguiException(
+        nameof(invalid_argument),
+        $"Invalid argument '{_arg}': {_message}"
+        );
+}
+

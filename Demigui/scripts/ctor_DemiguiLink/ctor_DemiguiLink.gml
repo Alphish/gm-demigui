@@ -1,4 +1,7 @@
 function DemiguiLink(_parent, _child) constructor {
+    if (!_parent.is_container)
+        throw DemiguiException.invalid_argument("parent", "A non-container component cannot be used as a parent.");
+    
     parent = _parent;
     child = _child;
     
