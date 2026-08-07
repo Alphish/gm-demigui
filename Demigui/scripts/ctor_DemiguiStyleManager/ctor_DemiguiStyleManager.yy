@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ctor_DemiguiStyleManager",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ctor_DemiguiStyleManager",
+  "parent":{
+    "name":"Styles",
+    "path":"folders/_Packages/Alphish/Demigui/Styles.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
