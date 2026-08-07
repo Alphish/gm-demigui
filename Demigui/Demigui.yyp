@@ -34,6 +34,7 @@
     {"id":{"name":"ui_DemiguiActionButton","path":"objects/ui_DemiguiActionButton/ui_DemiguiActionButton.yy",},},
     {"id":{"name":"ui_DemiguiSelectButton","path":"objects/ui_DemiguiSelectButton/ui_DemiguiSelectButton.yy",},},
     {"id":{"name":"ui_DemoActionButton","path":"objects/ui_DemoActionButton/ui_DemoActionButton.yy",},},
+    {"id":{"name":"ui_DemoSelectButton","path":"objects/ui_DemoSelectButton/ui_DemoSelectButton.yy",},},
     {"id":{"name":"rm_Demo","path":"rooms/rm_Demo/rm_Demo.yy",},},
     {"id":{"name":"ctor_CimpliCommand","path":"scripts/ctor_CimpliCommand/ctor_CimpliCommand.yy",},},
     {"id":{"name":"ctor_CimpliEventObserver","path":"scripts/ctor_CimpliEventObserver/ctor_CimpliEventObserver.yy",},},
