@@ -48,6 +48,7 @@
     {"id":{"name":"ctor_DemiguiStyle","path":"scripts/ctor_DemiguiStyle/ctor_DemiguiStyle.yy",},},
     {"id":{"name":"ctor_DemiguiStyleFamily","path":"scripts/ctor_DemiguiStyleFamily/ctor_DemiguiStyleFamily.yy",},},
     {"id":{"name":"ctor_DemiguiStyleManager","path":"scripts/ctor_DemiguiStyleManager/ctor_DemiguiStyleManager.yy",},},
+    {"id":{"name":"ctor_DemiguiStylesProvider","path":"scripts/ctor_DemiguiStylesProvider/ctor_DemiguiStylesProvider.yy",},},
     {"id":{"name":"feather_Cimpli","path":"scripts/feather_Cimpli/feather_Cimpli.yy",},},
     {"id":{"name":"spr_CimpliLogo","path":"sprites/spr_CimpliLogo/spr_CimpliLogo.yy",},},
     {"id":{"name":"spr_DemoButton","path":"sprites/spr_DemoButton/spr_DemoButton.yy",},},
