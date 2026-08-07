@@ -9,7 +9,10 @@
     "name":"Controls",
     "path":"folders/_Packages/Alphish/Demigui/Controls.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"par_DemiguiComponent",
+    "path":"objects/par_DemiguiComponent/par_DemiguiComponent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
