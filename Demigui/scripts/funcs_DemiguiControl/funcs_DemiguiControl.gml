@@ -1,4 +1,4 @@
-function demigui_control_handle_property(_property, _handler) {
-    _handler(_property.get_value());
-    _property.value_changed.add_handler(_handler);
+function demigui_control_link_signal(_signal, _handler) {
+    _handler(_signal.get_value());
+    _signal.when_value_changed_subject().add_handler(_handler);
 }

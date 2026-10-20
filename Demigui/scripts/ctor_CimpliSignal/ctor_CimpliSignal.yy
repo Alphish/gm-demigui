@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"ctor_AggregateFlagProperty",
+  "%Name":"ctor_CimpliSignal",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"ctor_AggregateFlagProperty",
+  "name":"ctor_CimpliSignal",
   "parent":{
-    "name":"Demo",
-    "path":"folders/Demo.yy",
+    "name":"Cimpli",
+    "path":"folders/_Packages/Alphish/Cimpli.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
