@@ -23,10 +23,10 @@ function CimpliTaskProcessor() constructor {
         throw CimpliException.not_implemented(self, nameof(process_step));
     }
     
-    /// @desc Returns the task progress so far.
-    /// @returns {Any}
-    static get_progress = function() {
-        return undefined;
+    /// @desc Handles an exception caught during the processing.
+    /// @arg {Any} exception        The caught exception.
+    static handle_exception = function(_exception) {
+        fail_with(_exception);
     }
     
     /// @desc Finishes processing the task.
