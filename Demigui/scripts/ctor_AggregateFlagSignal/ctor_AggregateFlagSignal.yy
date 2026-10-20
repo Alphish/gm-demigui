@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"ctor_AggregateFlagProperty",
+  "%Name":"ctor_AggregateFlagSignal",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"ctor_AggregateFlagProperty",
+  "name":"ctor_AggregateFlagSignal",
   "parent":{
     "name":"Demo",
     "path":"folders/Demo.yy",

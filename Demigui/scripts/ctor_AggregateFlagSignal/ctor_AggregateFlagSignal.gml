@@ -1,12 +1,12 @@
-function AggregateFlagProperty(_flags) constructor {
+function AggregateFlagSignal(_flags) constructor {
     flags = _flags;
     current_value = calculate_value();
     sets_value = false;
-    value_changed = new CimpliEventSubject(self);
+    value_changed = undefined;
     
     var _handler = method(self, handle_flag_change);
     for (var i = 0, _count = array_length(flags); i < _count; i++) {
-        flags[i].value_changed.add_handler(_handler);
+        flags[i].when_value_changed_subject().add_handler(_handler);
     }
     
     static get_value = function() {
@@ -28,7 +28,8 @@ function AggregateFlagProperty(_flags) constructor {
         }
         sets_value = false;
         
-        value_changed.send(current_value);
+        if (!is_undefined(value_changed))
+            value_changed.send(current_value);
     }
     
     static calculate_value = function() {
@@ -49,6 +50,12 @@ function AggregateFlagProperty(_flags) constructor {
             return;
         
         current_value = _new_value;
-        value_changed.send(current_value);
+        if (!is_undefined(value_changed))
+            value_changed.send(current_value);
+    }
+    
+    static when_value_changed_subject = function() {
+        value_changed ??= new CimpliEventSubject(self);
+        return value_changed;
     }
 }

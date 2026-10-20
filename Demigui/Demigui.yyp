@@ -38,7 +38,7 @@
     {"id":{"name":"ui_DemoCheckbox","path":"objects/ui_DemoCheckbox/ui_DemoCheckbox.yy",},},
     {"id":{"name":"ui_DemoSelectButton","path":"objects/ui_DemoSelectButton/ui_DemoSelectButton.yy",},},
     {"id":{"name":"rm_Demo","path":"rooms/rm_Demo/rm_Demo.yy",},},
-    {"id":{"name":"ctor_AggregateFlagProperty","path":"scripts/ctor_AggregateFlagProperty/ctor_AggregateFlagProperty.yy",},},
+    {"id":{"name":"ctor_AggregateFlagSignal","path":"scripts/ctor_AggregateFlagSignal/ctor_AggregateFlagSignal.yy",},},
     {"id":{"name":"ctor_CimpliCommand","path":"scripts/ctor_CimpliCommand/ctor_CimpliCommand.yy",},},
     {"id":{"name":"ctor_CimpliEventObserver","path":"scripts/ctor_CimpliEventObserver/ctor_CimpliEventObserver.yy",},},
     {"id":{"name":"ctor_CimpliEventSubject","path":"scripts/ctor_CimpliEventSubject/ctor_CimpliEventSubject.yy",},},
