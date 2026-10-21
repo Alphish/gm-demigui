@@ -27,6 +27,7 @@
   },
   "name":"Demigui",
   "resources":[
+    {"id":{"name":"ctrl_DemiguiDragDrop","path":"objects/ctrl_DemiguiDragDrop/ctrl_DemiguiDragDrop.yy",},},
     {"id":{"name":"ctrl_Demo","path":"objects/ctrl_Demo/ctrl_Demo.yy",},},
     {"id":{"name":"par_DemiguiComponent","path":"objects/par_DemiguiComponent/par_DemiguiComponent.yy",},},
     {"id":{"name":"par_DemiguiControl","path":"objects/par_DemiguiControl/par_DemiguiControl.yy",},},
