@@ -34,6 +34,8 @@
     {"id":{"name":"sys_Demigui","path":"objects/sys_Demigui/sys_Demigui.yy",},},
     {"id":{"name":"ui_DemiguiActionButton","path":"objects/ui_DemiguiActionButton/ui_DemiguiActionButton.yy",},},
     {"id":{"name":"ui_DemiguiSelectButton","path":"objects/ui_DemiguiSelectButton/ui_DemiguiSelectButton.yy",},},
+    {"id":{"name":"ui_DemiguiSlider","path":"objects/ui_DemiguiSlider/ui_DemiguiSlider.yy",},},
+    {"id":{"name":"ui_DemiguiSliderThumb","path":"objects/ui_DemiguiSliderThumb/ui_DemiguiSliderThumb.yy",},},
     {"id":{"name":"ui_DemiguiToggle","path":"objects/ui_DemiguiToggle/ui_DemiguiToggle.yy",},},
     {"id":{"name":"ui_DemoActionButton","path":"objects/ui_DemoActionButton/ui_DemoActionButton.yy",},},
     {"id":{"name":"ui_DemoCheckbox","path":"objects/ui_DemoCheckbox/ui_DemoCheckbox.yy",},},
