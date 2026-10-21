@@ -1,5 +1,7 @@
 selected_color = new CimpliSignal("RED");
 
+number_signal = new CimpliSignal(3);
+
 test_button = function() {
     show_debug_message($"The button has been tested with {selected_color.get_value()}!");
 }
